@@ -22,7 +22,7 @@ html {
 }
 body {
 	color: #a7a7a7;
-	line-height: 160%;
+	line-height: 220%;
 	font-family: 'Open Sans', sans-serif;
 	overflow: hidden;
   position: relative;
@@ -35,13 +35,12 @@ body {
 	height:100vh;
 }
 h1 {
-	margin: 90px 0 100px 0;
+	margin: 50px 0 75px 0;
 	color: #333;
 	font-size: 250%;
 	text-align: center;
 }
 a  {
-	margin: 90px 0 100px 0;
 	color: #333;
 	font-size: 100%;
 	text-align: center;
