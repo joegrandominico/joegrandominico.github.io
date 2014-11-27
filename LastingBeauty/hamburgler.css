@@ -17,11 +17,15 @@ ng\:form {
 	padding: 0px;
 	margin: 0px;
 }
+html {
+  overflow: hidden; 
+}
 body {
 	color: #a7a7a7;
 	line-height: 160%;
 	font-family: 'Open Sans', sans-serif;
 	overflow: hidden;
+  position: relative;
 }
 .wrapper {
 	padding: 15px;
