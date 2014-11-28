@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
 <script src="hamburgler.js"> </script>
+<link rel="stylesheet" href="col.css" />
 <link rel="stylesheet" href="hamburgler.css" />
 </head>
 
@@ -12,8 +13,6 @@
 
 <div class="mobilenav">
   <li><a href="#wrapper1" class="closer">Home</a></li>
-  <li><a href="#wrapper2" class="closer">Pricing</a></li>
-  <li><a href="#wrapper3" class="closer">Botox Party</a></li>
   <li><a href="#wrapper4" class="closer">More Info</a></li>
 </div>
 
@@ -26,35 +25,43 @@
   <div class="menui bottom-menu"></div>
 </div>
 </a>
-<div class="wrapper" id="wrapper1">
-  <div id="header">
-    <h1>Lasting Beauty Inc.</h1>
-    <h1><a href="tel:+16145620047">614.562.0047</a></h1>
-    <h1>The Lasting Beauty Difference.</h1>
-    <h4>You call and set up an appointment, And we'll come to you!</h4>
-    <h4>Plus, we will reinject the area for free if not satisfied after two weeks!</h4>
+<div class="AllWrapper" id="allwrapper">
+  <div class="wrapper" id="wrapper1">
+    <div id="header">
+      <h1>Lasting Beauty Inc.</h1>
+      <h1><a href="tel:+16145620047">614.562.0047</a></h1>
+    </div>
   </div>
-</div>
-<div class="wrapper" id="wrapper2">
-  <div id="header">
-    <h1>Pricing</h1>
-    <h2>1 Area for $200</h2>
-    <h3>We can offer a discount for multiple areas!</h3>
-    <h5>Typical areas include Glabellar, Forehead, Crows Feet)</h5>
-  </div>
-</div>
-<div class="wrapper" id="wrapper3">
-  <div id="header">
-    <h1>Want to spread the joy?</h1>
-    <h3>Host a "Botox Party" and have five friends get treatments!</h3>
-    <h3>The host will get one <strong>free!</strong></h3>
-  </div>
-</div>
-<div class="wrapper" id="wrapper4">
-  <div id="header">
-    <h1>Want to know more?</h1>
-    <h3>Check out our pamphlets</h3>
-    <h3>We can add reference client's name and number</h3>
+  <div class="section group">
+    <div class="col title span_1_of_3">
+      <div class="title">
+        <h1>Pricing</h1>
+      </div>
+      <div class="details">
+        <h3>1 Area for $200</h3>
+        <h3>We can offer a discount for multiple areas!</h3>
+        <h5>Typical areas include: <br />
+          Glabellar, Forehead, Crows Feet. </h5>
+      </div>
+    </div>
+    <div class="col title span_1_of_3">
+      <div class="title">
+        <h1>The Lasting Beauty Difference</h1>
+      </div>
+      <div class="details">
+        <h3>You call and set up an appointment, And we'll come to you!</h3>
+        <h3>Plus, we will reinject the area for free if not satisfied after two weeks!</h3>
+      </div>
+    </div>
+    <div class="col title span_1_of_3">
+      <div class="title">
+        <h1>Want to spread the joy?</h1>
+      </div>
+      <div class="details">
+        <h3>Host a "Botox Party" and have five friends get treatments!</h3>
+        <h3>The host will get one <strong>free!</strong></h3>
+      </div>
+    </div>
   </div>
 </div>
 </body>
