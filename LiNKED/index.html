@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>LiNKED</title>
+		<meta name="author" content="Alvaro Trigo Lopez" />
+		<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+		<meta name="keywords"
+content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+		<meta name="Resource-type" content="Document" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+		<link rel="stylesheet" type="text/css" href="css/primary.css" />
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56655924-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
+		<script type="text/javascript">
+ 	var deleteLog = false;
+
+		$(document).ready(function() {
+ 	    	$('#pagepiling').pagepiling({
+		menu: '#menu',
+ 	    		anchors: ['page1', 'page2', 'page3', 'page4'],
+		navigation: {
+             'textColor': '#f2f2f2',
+		'bulletsColor': '#ccc',
+             'position': 'right',
+		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
+         }
+ 	});
+ 	    });
+		</script>
+		</head>
+		<body>
+<ul id="menu">
+          <li data-menuanchor="page1" class="active"><a
+	href="#page1">LiNKED</a></li>
+          <li data-menuanchor="page2"><a
+	href="#page2">Mission</a></li>
+          <li data-menuanchor="page3"><a
+	href="#page3">Try it Out</a></li>
+</ul>
+<div id="pagepiling">
+	<div class="section" id="section1">
+    	<h1><img src="imgs/LiNKED2.png" /></h1>
+  	</div>
+    <div class="section" id="section2">
+    	<div class="intro">
+              <h1>Improving the way you get LiNKED with an artist</h1>
+              <h1>Find the right style, location and price.</h1>
+        </div>
+  	</div>
+    <div class="section" id="section3"> 
+    <script type="text/javascript" src="http://form.jotform.us/jsform/43237925286159"></script> 
+  	</div>
+</div>
+</body>
+</html>
