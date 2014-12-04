@@ -35,8 +35,35 @@ content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scr
 		'bulletsColor': '#ccc',
              'position': 'right',
 		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
-         }
- 	});
+         },
+		 
+        onLeave: function(index, nextIndex, direction){
+            if(nextIndex == 1 || nextIndex == 5) {
+                $('header').addClass('hide');
+            } else {
+                $('header').removeClass('hide');
+            }
+
+            if(nextIndex == 1) {
+                $("#pp-nav").fadeOut();
+            }
+
+            if(nextIndex == 5) {
+                $("#pp-nav li").removeClass('on-image');
+            } else {
+                $("#pp-nav li").addClass('on-image');
+            }
+        },
+
+        afterLoad: function(anchorLink, index){
+            //using index
+            if(index != 1 && index != 5) {
+                $("#pp-nav").fadeIn();
+            }
+        },
+
+        afterRender: $.proxy(this.postPagePiling, this)
+    });
  	    });
 		</script>
 		</head>
@@ -48,20 +75,25 @@ content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scr
 	href="#page2">Mission</a></li>
           <li data-menuanchor="page3"><a
 	href="#page3">Try it Out</a></li>
-</ul>
+        </ul>
 <div id="pagepiling">
-	<div class="section" id="section1">
-    	<h1><img src="imgs/LiNKED2.png" /></h1>
-  	</div>
-    <div class="section" id="section2">
-    	<div class="intro">
+          <header class="hide">
+    <div>
+              <h1 style="color:black;">Interested in our Photos?</h1>
+</div>
+  </header>
+          <div class="section" id="section1">
+    <h1><img src="imgs/LiNKED2.png" /></h1>
+  </div>
+          <div class="section" id="section2">
+    <div class="intro">
               <h1>Improving the way you get LiNKED with an artist</h1>
               <h1>Find the right style, location and price.</h1>
-        </div>
-  	</div>
-    <div class="section" id="section3"> 
+            </div>
+  </div>
+          <div class="section" id="section3"> 
     <script type="text/javascript" src="http://form.jotform.us/jsform/43237925286159"></script> 
-  	</div>
-</div>
+  </div>
+        </div>
 </body>
 </html>

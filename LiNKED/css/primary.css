@@ -5,6 +5,32 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 	padding: 0;
 	margin: 0;
 }
+header.hide {
+bottom: -86px;
+}
+header {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 86px;
+background: #fff;
+z-index: 11;
+border-bottom: 1px solid #dfdfdf;
+overflow: hidden;
+-moz-transition: top 0.5s ease-in-out;
+-o-transition: top 0.5s ease-in-out;
+-webkit-transition: top 0.5s ease-in-out;
+transition: top 0.5s ease-in-out;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+header h1{
+	color: #333;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
 a {
 	text-decoration:none;
 }
