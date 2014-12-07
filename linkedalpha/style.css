@@ -438,10 +438,38 @@ header .download-options {
 	height:66px;
 	vertical-align:top
 }
+.NickA {
+	display:inline-block;
+	height:65px;
+	color:#373e4d;
+	font-size:2.65em;
+	font-weight:400;
+	letter-spacing:0;
+	line-height:82px;
+	cursor:pointer;
+	-webkit-font-smoothing:antialiased;
+	text-align: right;
+}
+.NickA:before {
+	margin:0 12px 0 20px;
+	display:inline-block;
+	content:'';
+	background-image:url("../img/fb_groups.svg");
+	background-repeat:no-repeat;
+	background-position:0px 15px;
+	width:54px;
+	height:66px;
+	vertical-align:top
+}
 @media (max-width: 800px) {
 .logo {
 	font-size:2.25em;
 	line-height:85px
+}
+.NickA {
+	font-size:2.25em;
+	line-height:85px;
+	text-align: right;
 }
 }
 @media (max-width: 599px) {
@@ -451,6 +479,18 @@ header .download-options {
 	line-height:45px
 }
 .logo:before {
+	margin:0 6px 0 10px;
+	background-position:0 7px;
+	width:28px;
+	height:47px
+}
+.NickA {
+	height:30px;
+	font-size:1.4em;
+	line-height:45px;
+	text-align: right;
+}
+.NickA:before {
 	margin:0 6px 0 10px;
 	background-position:0 7px;
 	width:28px;
