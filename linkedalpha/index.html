@@ -77,19 +77,20 @@
     <div class="content-wrapper">
       <div class="content">
         <h2>We'll do the rest.</h2>
-<script src="http://max.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
-<script src="http://max.jotfor.ms/static/jotform.forms.js?3.2.4528" type="text/javascript"></script>
-<script type="text/javascript">
+        <div class="jotformform"> 
+          <script src="http://max.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script> 
+          <script src="http://max.jotfor.ms/static/jotform.forms.js?3.2.4528" type="text/javascript"></script> 
+          <script type="text/javascript">
    JotForm.init(function(){
       $('input_3').hint('ex: myname@example.com');
       JotForm.description('input_3', 'Real emails please!');
       JotForm.description('input_4', 'Don\'t feel obligated.. but if you fill in your number we can get you and your artist LiNKED quicker than with email. ');
    });
 </script>
-<link href="http://max.jotfor.ms/static/formCss.css?3.2.4528" rel="stylesheet" type="text/css" />
-<link type="text/css" rel="stylesheet" href="http://max.jotfor.ms/css/styles/nova.css?3.2.4528" />
-<link type="text/css" media="print" rel="stylesheet" href="http://max.jotfor.ms/css/printForm.css?3.2.4528" />
-<style type="text/css">
+          <link href="http://max.jotfor.ms/static/formCss.css?3.2.4528" rel="stylesheet" type="text/css" />
+          <link type="text/css" rel="stylesheet" href="http://max.jotfor.ms/css/styles/nova.css?3.2.4528" />
+          <link type="text/css" media="print" rel="stylesheet" href="http://max.jotfor.ms/css/printForm.css?3.2.4528" />
+          <style type="text/css">
     .form-label-left{
         width:150px !important;
     }
@@ -111,8 +112,7 @@
     }
 
 </style>
-
-<style type="text/css" id="form-designer-style">
+          <style type="text/css" id="form-designer-style">
     /* Injected CSS Code */
 .form-all {
   font-family: "Tahoma", sans-serif;
@@ -588,67 +588,50 @@ body {
 
     /* Injected CSS Code */
 </style>
-
-<link type="text/css" rel="stylesheet" href="http://jotform.us/css/styles/buttons/form-submit-button-simple_white.css?3.2.4528"/>
-<form class="jotform-form" action="http://submit.jotform.us/submit/43237925286159/" method="post" name="form_43237925286159" id="43237925286159" accept-charset="utf-8">
-  <input type="hidden" name="formID" value="43237925286159" />
-  <div class="form-all">
-    <ul class="form-section">
-      <li class="form-line" data-type="control_email" id="id_3">
-        <label class="form-label form-label-left form-label-auto" id="label_3" for="input_3">
-          E-mail
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_3" class="form-input">
-          <input type="email" class=" form-textbox validate[required, Email]" id="input_3" name="q3_email" size="30" value="" />
-        </div>
-      </li>
-      <li class="form-line" data-type="control_phone" id="id_4">
-        <label class="form-label form-label-left form-label-auto" id="label_4" for="input_4"> Phone Number </label>
-        <div id="cid_4" class="form-input">
-          <span class="form-sub-label-container">
-            <input class="form-textbox" type="tel" name="q4_phoneNumber4[area]" id="input_4_area" size="3">
-            <span class="phone-separate">
-              &nbsp;-
-            </span>
-            <label class="form-sub-label" for="input_4_area">
-              <div>
-                &nbsp;&nbsp;&nbsp;
-              </div>
-            </label>
-          </span>
-          <span class="form-sub-label-container">
-            <input class="form-textbox" type="tel" name="q4_phoneNumber4[phone]" id="input_4_phone" size="8">
-            <label class="form-sub-label" for="input_4_phone">
-              <div>
-                &nbsp;&nbsp;&nbsp;
-              </div>
-            </label>
-          </span>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_button" id="id_2">
-        <div id="cid_2" class="form-input-wide">
-          <div style="text-align:center" class="form-buttons-wrapper">
-            <button id="input_2" type="submit" class="form-submit-button form-submit-button-simple_white">
-              Get LiNKED Today!
-            </button>
-          </div>
-        </div>
-      </li>
-      <li style="display:none">
-        Should be Empty:
-        <input type="text" name="website" value="" />
-      </li>
-    </ul>
-  </div>
-  <input type="hidden" id="simple_spc" name="simple_spc" value="43237925286159" />
-  <script type="text/javascript">
+          <link type="text/css" rel="stylesheet" href="http://jotform.us/css/styles/buttons/form-submit-button-simple_white.css?3.2.4528"/>
+          <form class="jotform-form" action="http://submit.jotform.us/submit/43237925286159/" method="post" name="form_43237925286159" id="43237925286159" accept-charset="utf-8">
+            <input type="hidden" name="formID" value="43237925286159" />
+            <div class="form-all">
+              <ul class="form-section">
+                <li class="form-line" data-type="control_email" id="id_3">
+                  <label class="form-label form-label-left form-label-auto" id="label_3" for="input_3"> E-mail <span class="form-required"> * </span> </label>
+                  <div id="cid_3" class="form-input">
+                    <input type="email" class=" form-textbox validate[required, Email]" id="input_3" name="q3_email" size="30" value="" />
+                  </div>
+                </li>
+                <li class="form-line" data-type="control_phone" id="id_4">
+                  <label class="form-label form-label-left form-label-auto" id="label_4" for="input_4"> Phone Number </label>
+                  <div id="cid_4" class="form-input"> <span class="form-sub-label-container">
+                    <input class="form-textbox" type="tel" name="q4_phoneNumber4[area]" id="input_4_area" size="3">
+                    <span class="phone-separate"> &nbsp;- </span>
+                    <label class="form-sub-label" for="input_4_area">
+                    <div> &nbsp;&nbsp;&nbsp; </div>
+                    </label>
+                    </span> <span class="form-sub-label-container">
+                    <input class="form-textbox" type="tel" name="q4_phoneNumber4[phone]" id="input_4_phone" size="8">
+                    <label class="form-sub-label" for="input_4_phone">
+                    <div> &nbsp;&nbsp;&nbsp; </div>
+                    </label>
+                    </span> </div>
+                </li>
+                <li class="form-line" data-type="control_button" id="id_2">
+                  <div id="cid_2" class="form-input-wide">
+                    <div style="text-align:center" class="form-buttons-wrapper">
+                      <button id="input_2" type="submit" class="form-submit-button form-submit-button-simple_white"> Get LiNKED Today! </button>
+                    </div>
+                  </div>
+                </li>
+                <li style="display:none"> Should be Empty:
+                  <input type="text" name="website" value="" />
+                </li>
+              </ul>
+            </div>
+            <input type="hidden" id="simple_spc" name="simple_spc" value="43237925286159" />
+            <script type="text/javascript">
   document.getElementById("si" + "mple" + "_spc").value = "43237925286159-43237925286159";
   </script>
-</form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -657,8 +640,7 @@ body {
       <div class="content">
         <h2>So you like our photos?</h2>
         <p>Contact Nick Amrhein at 3 by One Media for more info.</p>
-		<a href="http://3byone.com"><img width="100%" src="../img/NickA.png" alt="NickA" /></a>
-      </div>
+        <a href="http://3byone.com"><img width="100%" src="../img/NickA.png" alt="NickA" /></a> </div>
     </div>
   </div>
 </div>
@@ -671,7 +653,7 @@ body {
 <script type="text/javascript" src="scripts/jquery-ui.min.js"></script> 
 <script src="http://d342t18316d1fl.cloudfront.net/e679484/js/vendor/jquery.pagepiling.min.js"></script> 
 <script src="http://d342t18316d1fl.cloudfront.net/e679484/js/fb-groups.js?v=1417656163"></script> 
-<script src="http://d342t18316d1fl.cloudfront.net/e679484/js/main.js?v=1417656163"></script>
+<script src="http://d342t18316d1fl.cloudfront.net/e679484/js/main.js?v=1417656163"></script> 
 <script>
                 var appPlatformId = navigator.userAgent.match(/(Android)/g) ? '358698234273213' : '219885578217768';
                 (function(d, s, id) {
@@ -681,6 +663,6 @@ body {
                     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=" + appPlatformId + "&version=v2.1";
                     fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));
-            </script> 
+            </script>
 </body>
 </html>
