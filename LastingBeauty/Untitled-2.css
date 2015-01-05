@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@charset "UTF-8";
+body {
+	background-color: #DDE7EC;
+	color: #4EB4E7;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+.AllWrapper {
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	height:95vh;
+}
+.Wrapper {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+h1 {
+	color: #4EB4E7;
+	font-size: 300%;
+	text-align: center;
+}
+a {
+	color: #4EB4E7;
+	font-size: 100%;
+	text-align: center;
+}
+h1, h2, h3, h4, h5, h6, span {
+	font-family: 'Oxygen', sans-serif;
+	text-align: center;
+}
+.face {
+	height:100vh;
+	overflow: hidden; 
+}
+#nav {
+	background-color: #4EB4E7;
+	border-radius: 10px;
+	text-align: center;
+}
+#nav a {
+	color: #DDE7EC;
+	font-family: 'Open Sans', sans-serif;
+	margin: 5%;
+	font-size: 125%;
+}

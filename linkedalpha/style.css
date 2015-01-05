@@ -178,14 +178,14 @@ header .download-options {
 	margin-bottom:20px
 }
 .section.create {
-	background-image:url("../img/bgs/create-desktop.en.jpg")
+	background-image:url("img/bgs/create-desktop.en.jpg")
 }
 .section.share {
-	background-image:url("../img/bgs/share-desktop.en.jpg");
+	background-image:url("img/bgs/share-desktop.en.jpg");
 	background-position:top center
 }
 .section.discover {
-	background-image:url("../img/bgs/discover-desktop.en.jpg");
+	background-image:url("img/bgs/discover-desktop.en.jpg");
 	background-position:80% center
 }
 .section.download {
@@ -291,13 +291,13 @@ header .download-options {
 	text-align:center
 }
 .section.create {
-	background-image:url("../img/bgs/create-tablet.en.jpg")
+	background-image:url("img/bgs/create-tablet.en.jpg")
 }
 .section.share {
-	background-image:url("../img/bgs/share-tablet.en.jpg")
+	background-image:url("img/bgs/share-tablet.en.jpg")
 }
 .section.discover {
-	background-image:url("../img/bgs/discover-tablet.en.jpg")
+	background-image:url("img/bgs/discover-tablet.en.jpg")
 }
 .section.download p {
 	margin:0 auto;
@@ -346,13 +346,13 @@ header .download-options {
 	padding:0 2%
 }
 .section.create {
-	background-image:url("../img/bgs/create-mobile.en.jpg")
+	background-image:url("img/bgs/create-mobile.en.jpg")
 }
 .section.share {
-	background-image:url("../img/bgs/share-mobile.en.jpg")
+	background-image:url("img/bgs/share-mobile.en.jpg")
 }
 .section.discover {
-	background-image:url("../img/bgs/discover-mobile.en.jpg")
+	background-image:url("img/bgs/discover-mobile.en.jpg")
 }
 .section.discover .content p {
 	max-width:230px
@@ -541,14 +541,14 @@ header .download-options {
 	box-sizing:border-box
 }
 .btn-store.ios {
-	background-image:url("../img/store_badges/ios/btn-iOS.en.png")
+	background-image:url("img/store_badges/ios/btn-iOS.en.png")
 }
 .btn-store.ios:after {
 	width:150px
 }
 .btn-store.android {
 	width:129px;
-	background-image:url("../img/store_badges/android/btn-android.en.png")
+	background-image:url("img/store_badges/android/btn-android.en.png")
 }
 .btn-store.android:after {
 	width:129px
@@ -577,7 +577,7 @@ header .download-options {
 .btn-more:before {
 	display:block;
 	content:'';
-	background:transparent url("../img/arrow.svg") center center no-repeat;
+	background:transparent url("img/arrow.svg") center center no-repeat;
 	width:40px;
 	height:40px;
 	overflow:hidden
@@ -692,36 +692,36 @@ p {
 	background-size:cover
 }
 .bgs .bg1 {
-	background-image:url("../img/carousel/c1.jpg");
+	background-image:url("img/carousel/c1.jpg");
 	background-position:center center
 }
 .bgs .bg2 {
-	background-image:url("../img/carousel/c2.jpg");
+	background-image:url("img/carousel/c2.jpg");
 	background-position:center center
 }
 .bgs .bg3 {
-	background-image:url("../img/carousel/c3.jpg");
+	background-image:url("img/carousel/c3.jpg");
 	background-position:50% 20%
 }
 .bgs .bg4 {
-	background-image:url("../img/carousel/c4.jpg");
+	background-image:url("img/carousel/c4.jpg");
 	background-position:50% 20%
 }
 @media (max-width: 800px) {
 .bgs .bg1 {
-	background-image:url("../img/carousel/c1-tablet.jpg");
+	background-image:url("img/carousel/c1-tablet.jpg");
 	background-position:center bottom
 }
 .bgs .bg2 {
-	background-image:url("../img/carousel/c2-tablet.jpg");
+	background-image:url("img/carousel/c2-tablet.jpg");
 	background-position:center bottom
 }
 .bgs .bg3 {
-	background-image:url("../img/carousel/c3-tablet.jpg");
+	background-image:url("img/carousel/c3-tablet.jpg");
 	background-position:center bottom
 }
 .bgs .bg4 {
-	background-image:url("../img/carousel/c4-tablet.jpg");
+	background-image:url("img/carousel/c4-tablet.jpg");
 	background-position:center bottom
 }
 }
@@ -730,16 +730,16 @@ p {
 	background-position:center bottom
 }
 .bgs .bg1 {
-	background-image:url("../img/carousel/c1-mobile.jpg")
+	background-image:url("img/carousel/c1-mobile.jpg")
 }
 .bgs .bg2 {
-	background-image:url("../img/carousel/c2-mobile.jpg")
+	background-image:url("img/carousel/c2-mobile.jpg")
 }
 .bgs .bg3 {
-	background-image:url("../img/carousel/c3-mobile.jpg")
+	background-image:url("img/carousel/c3-mobile.jpg")
 }
 .bgs .bg4 {
-	background-image:url("../img/carousel/c4-mobile.jpg")
+	background-image:url("img/carousel/c4-mobile.jpg")
 }
 }
 html, body {

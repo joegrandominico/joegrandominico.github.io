@@ -6,10 +6,7 @@
 	padding: 0px;
 	margin: 0px;
 }
-.section h1 {
-	margin: 20 0 20 0; 
-	font-size: 200%
-}
+
 
 /*  GROUPING  ============================================================================= */
 
@@ -31,7 +28,7 @@
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
+	/*margin: 1% 0 1% 1.6%;*/
 }
 
 .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
@@ -57,9 +54,6 @@
 
 .span_1_of_3 {
 	width: 32.26%; 
-}
-.title {
-	height: 120px; 
 }
 
 /*  GO FULL WIDTH AT LESS THAN 600 PIXELS */
