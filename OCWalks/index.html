@@ -23,60 +23,95 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <!-- Favicon -->
   <!--<link rel="shortcut icon" href="/favicon.ico">-->
-  <!--<style>
-body {
-  background:url('../assets/bg.jpg') no-repeat center center !important;
-  background-size:cover;
-  min-height: 100%;
-}
-.navbar {
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-</style>-->
+  <style>
+    html,
+    body {
+      /*css for full size background image*/
+      background: url("../assets/bg.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+    }
+    .navbar {
+      margin-top: 40px;
+      height: 65px;
+    }
+    .navbar-brand {
+      padding: 0px;
+    }
+    .bg-primary {
+      background-color: #f8f8f8;
+      color: #968c83;
+    }
+  </style>
 </head>
+
 <body>
-<img src="../assets/bg.jpg" class="img-responsive" alt="Responsive image">
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="../assets/gac.png" alt="logo"> </a>
-    </div>
+  <div class="container span12">
+    <nav class="navbar navbar-default">
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Menu Item #1 </a></li>
-        <li><a href="#">Menu Item #2 </a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Settings <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action #1</a></li>
-            <li><a href="#">Action #2</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated Action</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated Action</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="../assets/gac.png" alt="logo">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Menu Item #1 </a>
+          </li>
+          <li><a href="#">Menu Item #2 </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Settings <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action #1</a>
+              </li>
+              <li><a href="#">Action #2</a>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#">Separated Action</a>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#">Separated Action</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="col-md-12 bg-primary">Lorem ipsum dolor sit amet, mel ex unum viderer, ea singulis iudicabit neglegentur pri. Mei ut admodum atomorum, vis bonorum adolescens et. Ex falli philosophia vim, elitr commodo elaboraret usu ad, no eos illud dolorum pericula. An ceteros platonem
+          nam, quod recteque inciderint in quo. At nusquam convenire efficiantur sed, est an persius admodum invenire. Diceret petentium honestatis his ut, ex qualisque dissentias philosophia eam.
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
+        <div class="col-md-12 bg-primary">Lorem ipsum dolor sit amet, mel ex unum viderer, ea singulis iudicabit neglegentur pri. Mei ut admodum atomorum, vis bonorum adolescens et. Ex falli philosophia vim, elitr commodo elaboraret usu ad, no eos illud dolorum pericula. An ceteros platonem
+          nam, quod recteque inciderint in quo. At nusquam convenire efficiantur sed, est an persius admodum invenire. Diceret petentium honestatis his ut, ex qualisque dissentias philosophia eam.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="col-md-12 bg-primary">Lorem ipsum dolor sit amet, mel ex unum viderer, ea singulis iudicabit neglegentur pri. Mei ut admodum atomorum, vis bonorum adolescens et. Ex falli philosophia vim, elitr commodo elaboraret usu ad, no eos illud dolorum pericula. An ceteros platonem
+          nam, quod recteque inciderint in quo. At nusquam convenire efficiantur sed, est an persius admodum invenire. Diceret petentium honestatis his ut, ex qualisque dissentias philosophia eam. Pro te ceteros sententiae definiebas, prodesset adversarium
+          contentiones eu sed, tota ignota ceteros eos eu. Suscipiantur delicatissimi ut mei, sit te iisque noluisse interesset. Ea tation fuisset eam, et bonorum signiferumque quo. Debet graece delenit usu cu, nec mazim vulputate eu. Te novum zril nostrum
+          sit. Ad sea prompta praesent evertitur, denique gubergren te vel, vim te esse facer explicari. Porro possim interpretaris pro id, nec in cibo adhuc nonumes, in vim sanctus sensibus. Mazim sonet zril his id, ea nam putant tamquam adversarium.
+          Ius verterem periculis et. Ad quis consetetur nam.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-12 bg-primary">Lorem ipsum dolor sit amet, mel ex unum viderer, ea singulis iudicabit neglegentur pri. Mei ut admodum atomorum, vis bonorum adolescens et.</div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
