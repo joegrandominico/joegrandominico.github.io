@@ -24,6 +24,27 @@
     <link rel="stylesheet" href="flex/css/flexslider.css" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="flex/js/jquery.flexslider.js"></script>
+    <style type="text/css">
+    .column-2 {
+        width:25%;
+        max-width:none;
+        padding-right:5px;
+    }
+    .column-1 {
+        width:75%;
+        max-width:none;
+        padding-right:0px;
+        padding-left:5px;
+    }
+    @media only screen and (max-width: 768px) {
+        .column-1 { 
+            width: 100%;
+        }
+        .column-2 {
+            width: 100%;
+        }
+    }
+    </style>
 </head>
 <!--[if IE 9]>
         <style>
@@ -759,24 +780,7 @@ ng\:form {
                         <!-- /container -->
                     </section>
                     <!-- /pagefwheadline -->
-                    <div class="column-2" style="width:25%;max-width:auto;padding-right:5px;">
-                        <img src="./madeinatlanta_files/ATL.jpg">
-                        <p>Atlanta is the sprawling capital of Georgia. It played an important part in both the Civil War and the 1960s Civil Rights Movement. Atlanta History Center chronicles the city's past, and the Martin Luther King Jr. National Historic Site is dedicated to the African-American leader’s life and times.</p>
-                        <img src="./madeinatlanta_files/holder.jpg">
-                        <p>
-                        Choosing the right shingle for your home is fun, and we have a style and color for every home.<br>
-                        <a>Browse Owens Corning™ Shingles »</a>
-                        </p>
-                        <p>  
-                        Get the peace of mind that comes with a contractor who has qualified for Preferred status.<br> 
-                        <a>Find a Preferred Contractor »  </a>
-                        </p>
-                        <p>
-                        If you prefer to shop for roofing products yourself, find the nearest retailer or professional distributor here.<br>  
-                        <a>Find the nearest location »</a>
-                        </p>
-                    </div>
-                    <div class="column-1" style="width:75%;max-width:none;padding-right:0px;padding-left:5px;">
+                    <div class="column-1">
                         <!-- Load the flexslider -->
                         <script type="text/javascript" charset="utf-8">
                         $(window).load(function() {
@@ -802,6 +806,23 @@ ng\:form {
                         <p>Owens Corning™ Roofing began production of fiberglass reinforced asphalt shingles in 1977. For almost 40 years, Owens Corning has been producing high-quality 3-tab and architectural shingles for shipment throughout the Midwest, East Coast and even into Canada. Owens Corning™ Oakridge® Shingles and Duration® Series shingles with patented SureNail® Technology* are popular choices of professional roofing contractors and are two of the highest-selling shingles shipped out of the Medina Plant</p>
                         <p>Also on site is a Trumbull™ Asphalt manufacturing facility. Asphalt is a key critical ingredient in the production of fiberglass-based shingles, and Owens Corning Trumbull™ Asphalt is the leading supplier of weathering-grade asphalt to the roofing industry. The Trumbull™ Asphalt plant employs almost 30 people.   *SureNail® Technology U.S. Patent #7,836,654 and other patents pending.</p>
                         </div>
+                    </div>
+                                        <div class="column-2">
+                        <img src="./madeinatlanta_files/ATL.jpg">
+                        <p>Atlanta is the sprawling capital of Georgia. It played an important part in both the Civil War and the 1960s Civil Rights Movement. Atlanta History Center chronicles the city's past, and the Martin Luther King Jr. National Historic Site is dedicated to the African-American leader’s life and times.</p>
+                        <img src="./madeinatlanta_files/holder.jpg">
+                        <p>
+                        Choosing the right shingle for your home is fun, and we have a style and color for every home.<br>
+                        <a>Browse Owens Corning™ Shingles »</a>
+                        </p>
+                        <p>  
+                        Get the peace of mind that comes with a contractor who has qualified for Preferred status.<br> 
+                        <a>Find a Preferred Contractor »  </a>
+                        </p>
+                        <p>
+                        If you prefer to shop for roofing products yourself, find the nearest retailer or professional distributor here.<br>  
+                        <a>Find the nearest location »</a>
+                        </p>
                     </div>
                 </article>
             </section>
