@@ -25,8 +25,7 @@
     <link rel="stylesheet" href="css/zipCode.style.min.css?v=1.0.1">
     <link rel="stylesheet" href="css/magnifier.css">
     <link rel="stylesheet" href="css/inlinestyle.css">
-    <script src="js/jquery.min.js" type="text/javascript" ></script>
-    <script async="" src="http://www.google-analytics.com/analytics.js"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery.flexslider.js"></script>
     <script type="text/javascript" id="www-widgetapi-script" src="js/www-widgetapi.js" async=""></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
@@ -35,15 +34,31 @@
     <script type="text/javascript" src="js/CacheScript.js"></script>
     <script type="text/javascript" src="js/zipCode.ui.js"></script>
     <script type="text/javascript" src="js/flash_detect_min.js"></script>
-    <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+    <script type="text/javascript" src="//www.youtube.com/player_api"></script>
     <script type="text/javascript" src="js/yqlgeo.js"></script>
     <script type="text/javascript" src="js/mobilegeoloc.js"></script>
     <script type="text/javascript" src="js/magnifier.js"></script>
     <script type="text/javascript" src="js/s_code.js"></script>
     <script type="text/javascript" src="js/video.js"></script>
-    <script type="text/javascript" src="js/load_madein_btn.js"></script>
     <!--[if lt IE 9]><script type="text/javascript" src="/js/excanvas.js"></script><![endif]-->
     <!--[if lt IE 8]><script type="text/javascript"> window.location.href="/GetlatestBrowser.aspx";</script><![endif]-->
+    <script type="text/javascript">
+    var zipcode = jQuery.cookie("UserInfoZip");
+    alert(zipcode + " 1");
+    if (zipcode == null) {
+        jQuery.ajax({
+            url: '//freegeoip.net/json/',
+            type: 'POST',
+            dataType: 'jsonp',
+            success: function(location) {
+                zipcode = location.zipcode;
+                alert("success");
+                alert(zipcode);
+            }
+        });
+    };
+    alert(zipcode + " 2");
+    </script>
     <style type="text/css">
     @charset "UTF-8";
     [ng\:cloak],
@@ -302,23 +317,23 @@
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-1-copy" style="display: none;">
                                             <h2>Roofing Basics</h2>
-                                            <p>Roofs are made up of numerous important areas; check out Owens Corning&trade; Roofing the anatomy of a roof diagram to learn more about your roof and parts that work together to make your home safer.</p>
+                                            <p>Roofs are made up of numerous important areas; check out Owens Corning<sup>&trade;</sup> Roofing the anatomy of a roof diagram to learn more about your roof and parts that work together to make your home safer.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-2-copy" style="display: none;">
                                             <h2>Roofing Basics</h2>
-                                            <p>Do you think you need a new roof? Owens Corning&trade; Roofing lets you explore the common problems, like shingle curling and roof blistering, that may indicate you need a new roof.</p>
+                                            <p>Do you think you need a new roof? Owens Corning<sup>&trade;</sup> Roofing lets you explore the common problems, like shingle curling and roof blistering, that may indicate you need a new roof.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-3-copy" style="display: none;">
                                             <h2>Roofing Basics</h2>
-                                            <p>Choosing the right roofing contractor for your project is critical. Owens Corning&trade; Roofing offers some great tips to help you choose the right professional roofing contractor for your project.</p>
+                                            <p>Choosing the right roofing contractor for your project is critical. Owens Corning<sup>&trade;</sup> Roofing offers some great tips to help you choose the right professional roofing contractor for your project.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-4-copy">
                                             <h2>Roofing Basics</h2>
-                                            <p>Owens Corning&trade; Roofing and Asphalt offers leadership to the roofing industry in creating sustainable solutions and shingle recycling. Learn more about sustainable roofing and shingle recycling.</p>
+                                            <p>Owens Corning<sup>&trade;</sup> Roofing and Asphalt offers leadership to the roofing industry in creating sustainable solutions and shingle recycling. Learn more about sustainable roofing and shingle recycling.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-5-copy">
                                             <h2>Roofing Basics</h2>
-                                            <p>Picture yourself at home with a roof designed to reflect your unique personality. Find your perfect shingle color &amp; design your roof with a little help from Owens Corning&trade; Roofing.</p>
+                                            <p>Picture yourself at home with a roof designed to reflect your unique personality. Find your perfect shingle color &amp; design your roof with a little help from Owens Corning<sup>&trade;</sup> Roofing.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-6-copy">
                                             <h2>Roofing Basics</h2>
@@ -351,17 +366,17 @@
                                             <li id="a-12">
                                                 <h2 class="cta-bar"><a href="http://www.owenscorning.com/roofing/basics/how-much-do-you-need/">How Much Do I Need?</a></h2></li>
                                             <li id="a-13">
-                                                <h2 class="cta-bar"><a href="http://designeyeq.owenscorning.com/?src=rfg">Design EyeQ&reg; Visualization Tool</a></h2></li>
+                                                <h2 class="cta-bar"><a href="http://designeyeq.owenscorning.com/?src=rfg">Design EyeQ<sup>&reg;</sup> Visualization Tool</a></h2></li>
                                         </ul>
                                     </li>
                                     <li class="mega-menu-sub-right">
                                         <div class="mega-menu-sub-default" style="display: block;">
                                             <h2>Browse Shingles &amp; Accessories</h2>
-                                            <p>Browse through the Owens Corning&trade; collection of roofing shingles and accessories.</p>
+                                            <p>Browse through the Owens Corning<sup>&trade;</sup> collection of roofing shingles and accessories.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-8-copy" style="display: none;">
                                             <h2>Browse Shingles &amp; Accessories</h2>
-                                            <p>Browse the Owens Corning&trade; collection of roofing shingles and view photos of the various roofing products available.</p>
+                                            <p>Browse the Owens Corning<sup>&trade;</sup> collection of roofing shingles and view photos of the various roofing products available.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-9-copy" style="display: none;">
                                             <h2>Browse Shingles &amp; Accessories</h2>
@@ -369,19 +384,19 @@
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-10-copy" style="display: none;">
                                             <h2>Browse Shingles &amp; Accessories</h2>
-                                            <p>Owens Corning&trade; Roofing offers an array of roofing accessories to help ensure a long; healthy life for your new roof. Take a look at all the roofing accessories offered.</p>
+                                            <p>Owens Corning<sup>&trade;</sup> Roofing offers an array of roofing accessories to help ensure a long; healthy life for your new roof. Take a look at all the roofing accessories offered.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-11-copy" style="display: none;">
                                             <h2>Browse Shingles &amp; Accessories</h2>
-                                            <p>Find the nearest retail stores or distributors in your area to purchase Owens Corning&trade; Roofing products.</p>
+                                            <p>Find the nearest retail stores or distributors in your area to purchase Owens Corning<sup>&trade;</sup> Roofing products.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-12-copy" style="display: none;">
                                             <h2>Browse Shingles &amp; Accessories</h2>
-                                            <p>For Do-it-Yourselfers, Owens Corning&trade; Roofing helps determine everything you need to do the job, including the number of shingles.</p>
+                                            <p>For Do-it-Yourselfers, Owens Corning<sup>&trade;</sup> Roofing helps determine everything you need to do the job, including the number of shingles.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-13-copy" style="display: none;">
                                             <h2>Browse Shingles &amp; Accessories</h2>
-                                            <p>Our Design EyeQ&reg; Visualization Tool lets you upload a picture of your home, give it a new roof, try out different exterior looks and even experiment with professionally designed color combinations.</p>
+                                            <p>Our Design EyeQ<sup>&reg;</sup> Visualization Tool lets you upload a picture of your home, give it a new roof, try out different exterior looks and even experiment with professionally designed color combinations.</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -391,7 +406,7 @@
                     <li class="has-menu">
                         <a href="http://www.owenscorning.com/roofing/total-protection-roofing-system/">
                             <h4>
-                                    <span>Total Protection Roofing System&trade;</span>
+                                    <span>Total Protection Roofing System<sup>&trade;</sup></span>
                                 </h4>
                         </a>
                     </li>
@@ -415,15 +430,15 @@
                                     <li class="mega-menu-sub-right">
                                         <div class="mega-menu-sub-default" style="display: block;">
                                             <h2>Warranty</h2>
-                                            <p>If you have questions about Owens Corning&trade; warranties, you can find everything you need to know about here in the Warranty section.</p>
+                                            <p>If you have questions about Owens Corning<sup>&trade;</sup> warranties, you can find everything you need to know about here in the Warranty section.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-16-copy">
                                             <h2>Warranty</h2>
-                                            <p>Look at the Owens Corning&trade; Roofing warranties of all our shingle products and compare them product by product.</p>
+                                            <p>Look at the Owens Corning<sup>&trade;</sup> Roofing warranties of all our shingle products and compare them product by product.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-17-copy">
                                             <h2>Warranty</h2>
-                                            <p>Need to register an Owens Corning&trade; Roofing Standard or Standard System Warranty, File a Claim or Check Claim Status? It's easy to manage your warranty online!</p>
+                                            <p>Need to register an Owens Corning<sup>&trade;</sup> Roofing Standard or Standard System Warranty, File a Claim or Check Claim Status? It's easy to manage your warranty online!</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -456,27 +471,27 @@
                                     <li class="mega-menu-sub-right">
                                         <div class="mega-menu-sub-default" style="display: block;">
                                             <h2>Find a Contractor</h2>
-                                            <p>Finding an Owens Corning&trade; Certified roofing contractor has never been easier. Take a look at the roofing contractors available in your area.</p>
+                                            <p>Finding an Owens Corning<sup>&trade;</sup> Certified roofing contractor has never been easier. Take a look at the roofing contractors available in your area.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-19-copy">
                                             <h2>Find a Contractor</h2>
-                                            <p>If you think purchasing a new roof is on your to-do list, we can help. Here is the resource information you’ll need to make this experience a positive one by using one of Owens Corning&trade; Certified Roofing Contractors.</p>
+                                            <p>If you think purchasing a new roof is on your to-do list, we can help. Here is the resource information you’ll need to make this experience a positive one by using one of Owens Corning<sup>&trade;</sup> Certified Roofing Contractors.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-20-copy">
                                             <h2>Find a Contractor</h2>
-                                            <p>Choosing the right roofing contractor for your project is critical. Owens Corning&trade; Roofing offers some great tips to help you choose the right professional roofing contractor for your project.</p>
+                                            <p>Choosing the right roofing contractor for your project is critical. Owens Corning<sup>&trade;</sup> Roofing offers some great tips to help you choose the right professional roofing contractor for your project.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-21-copy">
                                             <h2>Find a Contractor</h2>
-                                            <p>Owens Corning&trade; Roofing knows that the roofing process can be intimidating sometimes, we have put together a list of tips and what you can expect when getting a new roof put on.</p>
+                                            <p>Owens Corning<sup>&trade;</sup> Roofing knows that the roofing process can be intimidating sometimes, we have put together a list of tips and what you can expect when getting a new roof put on.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-22-copy">
                                             <h2>Find a Contractor</h2>
-                                            <p>Owens Corning&trade; Roofing and Asphalt offers leadership to the roofing industry in creating sustainable solutions and shingle recycling. Learn more about sustainable roofing and shingle recycling.</p>
+                                            <p>Owens Corning<sup>&trade;</sup> Roofing and Asphalt offers leadership to the roofing industry in creating sustainable solutions and shingle recycling. Learn more about sustainable roofing and shingle recycling.</p>
                                         </div>
                                         <div class="mega-menu-sub-hidden" id="a-23-copy">
                                             <h2>Find a Contractor</h2>
-                                            <p>Not sure what all the parts of your roof are and how they work together? The Owens Corning&trade; Roofing Glossary can help clear it up for you.</p>
+                                            <p>Not sure what all the parts of your roof are and how they work together? The Owens Corning<sup>&trade;</sup> Roofing Glossary can help clear it up for you.</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -504,6 +519,12 @@
                 <div id="ctl00_UserPersonaPopup_zipCodeControl_res" style="display:none">browseshingles.aspxcompareproducts.aspxfindacontractor.aspxproducts/productdetails.aspxdistributor_locator1.aspx</div>
             </div>
         </section>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $("#ctl00_UserPersonaPopup_zipCodeControl_zipTextBox").val(zipcode);
+        });
+        </script>
+        <script type="text/javascript" src="js/load_madein_btn.js"></script>
         <div class="persona-overlay-bg">
         </div>
         <div class="persona-overlay">
@@ -566,7 +587,7 @@
                         <span id="ctl00_BodyContentPlaceHolder_breadCrumb_exception"></span>
                         <br>
                         <div id="ctl00_BodyContentPlaceHolder_headingPanel">
-                            <h1>Roofing Proudly Made by your Owens Corning&reg; Atlanta Plant Neighbors </h1>
+                            <h1>Roofing Proudly Made by your Owens Corning<sup>&reg;</sup> Atlanta Plant Neighbors </h1>
                             <input type="hidden" name="ctl00$BodyContentPlaceHolder$hiddenConId" id="ctl00_BodyContentPlaceHolder_hiddenConId">
                         </div>
                     </div>
@@ -591,12 +612,12 @@
                             <li><img src="images/slide2.jpg" /></li>
                         </ul>
                     </div>
-                    <p>Owens Corning&trade; Roofing began <strong>local</strong> production of fiberglass reinforced asphalt shingles in 1977. For almost 40 years, Owens Corning has been producing high-quality 3-tab and architectural shingles for shipment throughout <strong>Georgia and the Southeast</strong>. Owens Corning&reg; <strong>Supreme&reg; Shingles</strong>, Oakridge&reg; Shingles and Duration&reg; Series shingles with patented SureNail&reg; Technology* are popular choices of professional roofing contractors and are the highest-selling shingles shipped out of the <strong>Atlanta</strong> Plant.</p>
-                    <p><strong>Owens Corning Atlanta employs over 100 dedicated employees who help make enough Owens Corning shingles every day to cover 300 homes.</strong> Also on site is a Trumbull&trade; Asphalt manufacturing facility. Asphalt is a key critical ingredient in the production of fiberglass-based shingles, and Owens Corning Trumbull&trade; Asphalt is the leading supplier of weathering-grade asphalt to the roofing industry. The <strong>Atlanta</strong> Trumbull&trade; Asphalt plant employs almost 30 people.</p>
+                    <p>Owens Corning<sup>&trade;</sup> Roofing began <strong>local</strong> production of fiberglass reinforced asphalt shingles in 1977. For almost 40 years, Owens Corning has been producing high-quality 3-tab and architectural shingles for shipment throughout <strong>Georgia and the Southeast</strong>. Owens Corning<sup>&reg;</sup> <strong>Supreme<sup>&reg;</sup> Shingles</strong>, Oakridge<sup>&reg;</sup> Shingles and Duration<sup>&reg;</sup> Series shingles with patented SureNail<sup>&reg;</sup> Technology* are popular choices of professional roofing contractors and are the highest-selling shingles shipped out of the <strong>Atlanta</strong> Plant.</p>
+                    <p><strong>Owens Corning Atlanta employs over 100 dedicated employees who help make enough Owens Corning shingles every day to cover 300 homes.</strong> Also on site is a Trumbull<sup>&trade;</sup> Asphalt manufacturing facility. Asphalt is a key critical ingredient in the production of fiberglass-based shingles, and Owens Corning Trumbull<sup>&trade;</sup> Asphalt is the leading supplier of weathering-grade asphalt to the roofing industry. The <strong>Atlanta</strong> Trumbull<sup>&trade;</sup> Asphalt plant employs almost 30 people.</p>
                     <h3>The Owens Corning™ Roofing Brand Promise</h3>
                     <p>When you buy Owens Corning™ Roofing shingles, you can rest assured that our commitment to quality is of the highest importance. Our shingles undergo extensive testing to ensure they meet industry standards and certifications so that you can feel good about your roofing investment. In addition, our products will delight you with their beauty and provide you with a confidence that your home is protected, today and tomorrow.</p>
                     <p>Since 1938, Owens Corning has had a history of innovation. We invented Fiberglas® fibers which helped transform many markets such as automotive, recreational, and building materials—our famous PINK™ Insulation has been used in millions of homes across the country. We held our first fiberglass shingle patent in 1965, and helped convert the old organic shingle marketplace throughout the 1980’s. Today, the fiber glass and asphalt composition of roofing shingles plays a crucial role in the durability and performance of all asphalt shingles.</p>
-                    <p><em>*SureNail&reg; Technology U.S. Patent #7,836,654 and other patents pending.</em></p>
+                    <p><em>*SureNail<sup>&reg;</sup> Technology U.S. Patent #7,836,654 and other patents pending.</em></p>
                 </div>
                 <div class="column-2 freeroof">
                     <p><em>"Making shingles is a team effort!  I’m proud to say that I lead a group of dedicated employees who everyday do their part to make the high quality Owens Corning shingles that help protect the homes in your neighborhood."</em></p>
@@ -605,7 +626,7 @@
                     <p>
                         Choosing the right shingle for your home is fun, and we have a style and color for every home.
                         <br>
-                        <a>Browse Owens Corning&trade; Shingles »</a>
+                        <a>Browse Owens Corning<sup>&trade;</sup> Shingles »</a>
                     </p>
                     <p>
                         Get the peace of mind that comes with a contractor who has qualified for Preferred status.
@@ -641,7 +662,7 @@
                             <li>
                                 <h3>Contact Us:</h3></li>
                             <li>
-                                <div class="callout">Call <span class="is-pink">1-800-GET-PINK<sup>&reg;</sup></span>
+                                <div class="callout">Call <span class="is-pink">1-800-GET-PINK<sup><sup>&reg;</sup></sup></span>
                                     <br>(1-800-438-7465)</div>
                             </li>
                             <li><a href="https://warranty.owenscorning.com/login.action" target="_blank">Warranty Management</a></li>
@@ -745,7 +766,7 @@
                 <div class="container">
                     <ul class="large-grid-1 inner">
                         <li>© <a href="http://www.owenscorning.com/roofing/copyright/">1996–2015 Owens Corning</a> | <span><a href="http://www.owenscorning.com/privacypolicy.asp">Privacy Policy</a> | <a href="http://www.owenscorning.com/sitemap/">Site Map</a></span> | <a href="http://www.owenscorning.com/unsubscribe/">Unsubscribe</a>
-                            <br> The color PINK is a registered trademark of Owens Corning. THE PINK PANTHER &trade; &amp; © 1964–2015 Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved.</li>
+                            <br> The color PINK is a registered trademark of Owens Corning. THE PINK PANTHER <sup>&trade;</sup> &amp; © 1964–2015 Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved.</li>
                     </ul>
                 </div>
             </div>
@@ -799,16 +820,16 @@
                             <li><a href="javascript:return void(0);" onclick="navigateToURL2(&quot;/roofing/basics/how-much-do-you-need/&quot;,&quot;HomeOwner&quot;);">
                                                 How Much Do I Need?<i class="icon-chevron-right"></i> </a> </li>
                             <li><a href="javascript:return void(0);" onclick="navigateToURL2(&quot;/roofing/browse-shingles/designs-in-roof/&quot;,&quot;HomeOwner&quot;);">
-                                                Design EyeQ&reg; Visualization Tool<i class="icon-chevron-right"></i> </a> </li>
+                                                Design EyeQ<sup>&reg;</sup> Visualization Tool<i class="icon-chevron-right"></i> </a> </li>
                             <li><a href="javascript:return void(0);" onclick="navigateToURL2(&quot;/roofing/browse-shingles/surenail-technology/&quot;,&quot;HomeOwner&quot;);">
-                                                SureNail&reg; Technology<i class="icon-chevron-right"></i> </a> </li>
+                                                SureNail<sup>&reg;</sup> Technology<i class="icon-chevron-right"></i> </a> </li>
                         </ul>
                     </li>
                     <li><a href="http://www.owenscorning.com/roofing/madeinoregon/#" title="HomeOwner">
-                                Total Protection Roofing System&trade;<i class="icon-plus"></i></a>
+                                Total Protection Roofing System<sup>&trade;</sup><i class="icon-plus"></i></a>
                         <ul class="mobile-tertiary-nav">
                             <li><a href="javascript:return void(0);" onclick="navigateToURL2(&quot;/roofing/total-protection-roofing-system/&quot;,&quot;HomeOwner&quot;);">
-                                                Total Protection Roofing System&trade;<i class="icon-chevron-right"></i> </a> </li>
+                                                Total Protection Roofing System<sup>&trade;</sup><i class="icon-chevron-right"></i> </a> </li>
                         </ul>
                     </li>
                     <li><a href="http://www.owenscorning.com/roofing/madeinoregon/#" title="HomeOwner">
@@ -887,7 +908,7 @@
                             <li><a href="javascript:return void(0);" onclick="navigateToURL2(&quot;/roofing/accessories/&quot;,&quot;BuildingProfessional&quot;);">
                                                 Browse Accessories<i class="icon-chevron-right"></i> </a> </li>
                             <li><a href="javascript:return void(0);" onclick="navigateToURL2(&quot;/roofing/total-protection-roofing-system/&quot;,&quot;BuildingProfessional&quot;);">
-                                                Total Protection Roofing System&trade;<i class="icon-chevron-right"></i> </a> </li>
+                                                Total Protection Roofing System<sup>&trade;</sup><i class="icon-chevron-right"></i> </a> </li>
                             <li><a href="javascript:return void(0);" onclick="navigateToURL2(&quot;/roofing/basics/shingle-recycling/take-pledge/&quot;,&quot;BuildingProfessional&quot;);">
                                                 Shingle Recycling<i class="icon-chevron-right"></i> </a> </li>
                         </ul>
