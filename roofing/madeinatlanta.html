@@ -43,21 +43,22 @@
     <!--[if lt IE 9]><script type="text/javascript" src="/js/excanvas.js"></script><![endif]-->
     <!--[if lt IE 8]><script type="text/javascript"> window.location.href="/GetlatestBrowser.aspx";</script><![endif]-->
     <script type="text/javascript">
-    var zipcode = jQuery.cookie("UserInfoZip");
-    alert(zipcode + " 1");
-    if (zipcode == null) {
-        jQuery.ajax({
-            url: '//freegeoip.net/json/',
-            type: 'POST',
-            dataType: 'jsonp',
-            success: function(location) {
-                zipcode = location.zip_code;
-                alert("success");
-                alert(zipcode);
-            }
-        });
+    function zip() {
+        var zipcode = jQuery.cookie("UserInfoZip");
+        if (zipcode == null) {
+            jQuery.ajax({
+                url: '//freegeoip.net/json/',
+                type: 'POST',
+                dataType: 'jsonp',
+                success: function(location) {
+                    zipcode = location.zip_code;
+                    jQuery("#ctl00_UserPersonaPopup_zipCodeControl_zipTextBox").val(zipcode);
+                }
+            });
+        } else {
+            jQuery("#ctl00_UserPersonaPopup_zipCodeControl_zipTextBox").val(zipcode);
+        };
     };
-    alert(zipcode + " 2");
     </script>
     <style type="text/css">
     @charset "UTF-8";
@@ -520,9 +521,7 @@
             </div>
         </section>
         <script type="text/javascript">
-        $(document).ready(function() {
-            $("#ctl00_UserPersonaPopup_zipCodeControl_zipTextBox").val(zipcode);
-        });
+        $(document).ready(function() {});
         </script>
         <script type="text/javascript" src="js/load_madein_btn.js"></script>
         <div class="persona-overlay-bg">
