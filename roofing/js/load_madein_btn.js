@@ -1,4 +1,22 @@
 $(document).ready(function() {
+    var zipcode = jQuery.cookie("UserInfoZip");
+    if (zipcode == null) {
+        jQuery.ajax({
+            url: '//freegeoip.net/json/',
+            type: 'POST',
+            dataType: 'jsonp',
+            success: function(location) {
+                zipcode = location.zip_code;
+                jQuery("#ctl00_UserPersonaPopup_zipCodeControl_zipTextBox").val(zipcode);
+            }
+        });
+    } else {
+        zipcode = zipcode.replace(/[^0-9]/g, '');
+        jQuery("#ctl00_UserPersonaPopup_zipCodeControl_zipTextBox").val(zipcode);
+    };
+    checkzip();
+});
+function checkzip() {
     //Get Zip Code
     var zip = parseInt($('#ctl00_UserPersonaPopup_zipCodeControl_zipTextBox').val());
     var urlZone;
@@ -455,4 +473,4 @@ $(document).ready(function() {
         "</a>";
         $(".freeroof").prepend(html);
     }
-});
+};
