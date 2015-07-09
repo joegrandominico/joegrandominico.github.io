@@ -470,7 +470,10 @@ function checkzip() {
         var html = 
         "<a href='http://ww3.owenscorning.com/freeroof/atlanta?cid=ban:oc:MiA:1:1:freeroof'>" +
         "<img src='images/freeroof.png'>" +
-        "</a>";
+        "</a>"
+        "<p>" +
+        "We are your neighbors—and neighbors watch out for neighbors! To celebrate, we are giving away a free roofing system to one lucky person within the general Atlanta area." +
+        "</p>";
         $(".freeroof").prepend(html);
     }
 };

@@ -11,6 +11,7 @@
     <title>
         Made in Atlanta | Owens Corning Roofing
     </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="keywords" content="professional roofing, roofing system, oc roofing, owens corning roofing, new roof, roofing system, find a professional, roofing products, owens corning roofing products, owens corning roofing system,plant,architectural shingles,architectural,atlanta,sustainability,Georgia">
     <meta name="description" content="Made in Oregon plant info. page">
@@ -18,13 +19,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
     <link href="http://owenscorning.com/" title="Owens Corning" rel="home">
     <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-    <link rel="stylesheet" href="css/style.min.css?v=1.0.53">
     <link rel="stylesheet" href="css/style-roofingcommon-ie8.css">
     <link rel="stylesheet" href="css/tipped.css?v=1.0.1">
     <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/zipCode.style.min.css?v=1.0.1">
     <link rel="stylesheet" href="css/magnifier.css">
     <link rel="stylesheet" href="css/inlinestyle.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/zipCode.style.min.css">
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery.flexslider.js"></script>
     <script type="text/javascript" id="www-widgetapi-script" src="js/www-widgetapi.js" async=""></script>
@@ -91,6 +92,20 @@
 </head>
 
 <body>
+    <!--[if lte IE 8]>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            var head = document.getElementsByTagName('head')[0],
+                style = document.createElement('style');
+            style.type = 'text/css';
+            style.styleSheet.cssText = ':before,:after{content:none !important';
+            head.appendChild(style);
+            setTimeout(function() {
+                head.removeChild(style);
+            }, 0);
+        });
+        </script>
+    <![endif]-->
     <script type="text/javascript">
     $(document).ready(function() {
         if (!navigator.cookieEnabled) {
@@ -571,7 +586,7 @@
                 <!-- /pagefwheadline -->
                 <div class="column-1">
                     <!-- Load the flexslider -->
-                    <script type="text/javascript" charset="utf-8">
+                    <script type="text/javascript">
                     $(window).load(function() {
                         $('.flexslider').flexslider({
                             animation: "fade", // slide or fade
@@ -589,8 +604,8 @@
                             <li><img src="images/slide4.jpg" /></li>
                         </ul>
                     </div>
-                    <p>Owens Corning<sup>&trade;</sup> Roofing began <strong>local</strong> production of fiberglass reinforced asphalt shingles in 1977. For almost 40 years, Owens Corning has been producing high-quality 3-tab and architectural shingles for shipment throughout <strong>Georgia and the Southeast</strong>. Owens Corning<sup>&reg;</sup> <strong>Supreme<sup>&reg;</sup> Shingles</strong>, Oakridge<sup>&reg;</sup> Shingles and Duration<sup>&reg;</sup> Series shingles with patented SureNail<sup>&reg;</sup> Technology* are popular choices of professional roofing contractors and are the highest-selling shingles shipped out of the <strong>Atlanta</strong> Plant.</p>
-                    <p><strong>Owens Corning Atlanta employs over 100 dedicated employees who help make enough Owens Corning shingles every day to cover 300 homes.</strong> Also on site is a Trumbull<sup>&trade;</sup> Asphalt manufacturing facility. Asphalt is a key critical ingredient in the production of fiberglass-based shingles, and Owens Corning Trumbull<sup>&trade;</sup> Asphalt is the leading supplier of weathering-grade asphalt to the roofing industry. The <strong>Atlanta</strong> Trumbull<sup>&trade;</sup> Asphalt plant employs almost 30 people.</p>
+                    <p>Owens Corning<sup>&trade;</sup> Roofing began local production of fiberglass reinforced asphalt shingles in 1977. For almost 40 years, Owens Corning has been producing high-quality 3-tab and architectural shingles for shipment throughout Georgia and the Southeast. Owens Corning<sup>&reg;</sup> Supreme<sup>&reg;</sup> Shingles, Oakridge<sup>&reg;</sup> Shingles and Duration<sup>&reg;</sup> Series shingles with patented SureNail<sup>&reg;</sup> Technology* are popular choices of professional roofing contractors and are the highest-selling shingles shipped out of the Atlanta Plant.</p>
+                    <p>Owens Corning Atlanta employs over 100 dedicated employees who help make enough Owens Corning shingles every day to cover 300 homes. Also on site is a Trumbull<sup>&trade;</sup> Asphalt manufacturing facility. Asphalt is a key critical ingredient in the production of fiberglass-based shingles, and Owens Corning Trumbull<sup>&trade;</sup> Asphalt is the leading supplier of weathering-grade asphalt to the roofing industry. The Atlanta Trumbull<sup>&trade;</sup> Asphalt plant employs almost 30 people.</p>
                     <h3>The Owens Corning™ Roofing Brand Promise</h3>
                     <p>When you buy Owens Corning™ Roofing shingles, you can rest assured that our commitment to quality is of the highest importance. Our shingles undergo extensive testing to ensure they meet industry standards and certifications so that you can feel good about your roofing investment. In addition, our products will delight you with their beauty and provide you with a confidence that your home is protected, today and tomorrow.</p>
                     <p>Since 1938, Owens Corning has had a history of innovation. We invented Fiberglas® fibers which helped transform many markets such as automotive, recreational, and building materials—our famous PINK™ Insulation has been used in millions of homes across the country. We held our first fiberglass shingle patent in 1965, and helped convert the old organic shingle marketplace throughout the 1980’s. Today, the fiber glass and asphalt composition of roofing shingles plays a crucial role in the durability and performance of all asphalt shingles.</p>
