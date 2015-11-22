@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+#Container {
+	width: 968px;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+#main_image {
+	background-image: url(../images/main.jpg);
+	background-repeat: no-repeat;
+	height: 376px;
+	width: 968px;
+	position: relative;
+}
+#header {
+	color: #FFF;
+	background-color: #000;
+	height: 100px;
+	position: relative;
+}
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #3BBB;
+	background-color: #FFF;
+	margin: 0px;
+	text-align: left;
+}
+#header a {
+	font-size: 16px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 100px;
+}
+#header ul li {
+	float: left;
+}
+#header ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+#left_column, #center_column, #right_column{
+	width: 316px;
+	float:left;
+}
+#center_column, #right_column{
+	margin-left: 10px;
+}
+h1 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin: 0;
+	float: left;
+	font-size: 36px;
+}
+#contact_column h1 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+}
+
+#main_text {
+	color: #000;
+	width: 300px;
+	background-color: #FFF;
+	background: rgba(255,255,255,0.8);
+	border-radius: 10px;
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	padding: 12px;
+}
+#main_text  h4 {
+	font-size: 10px;
+	text-align: right;
+	margin: 0px;
+}
+
+#main_text h3 {
+	font-size: 12px;
+	margin: 0px;
+}
+#main_text h2 {
+	color: #035BBF;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+#header h1 a {
+	font-variant: normal;
+	width: auto;
+	font-size: 36px;
+}
+
+
+
+#header p {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-variant: small-caps;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 15px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+#hours_column{
+	margin-left:234px;
+	margin-right:234px;
+	alignment-adjust:central;
+	width: 500px;
+	text-align: center;
+}
+#contact_column {
+	text-align: center;
+}
+#contact_column h2 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 36px;
+	text-align: center;
+}
+#about_column {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	width: auto;
+}
+#about_column ul {
+	list-style-position: inside;
+}
