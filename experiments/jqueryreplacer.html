@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>val demo</title>
+  <style>
+  p {
+    color: blue;
+    margin: 8px;
+  }
+  </style>
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+ 
+<input type="text" value="some text">
+<h1></h1>
+ 
+<script>
+$( "input" )
+  .keyup(function() {
+    var value = $( this ).val();
+    $( "h1" ).text( value );
+  })
+  .keyup();
+</script> 
+</body>
+</html>
