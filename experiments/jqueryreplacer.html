@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Text Replacement Test</title>
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<input type="text" class="textbox" value="Put Text Here!">
+<h1 class="textdisplay"></h1>
+<script>
+$( "input" )
+  .keyup(function() {
+    var value = $( this ).val();
+    $( "h1" ).text( value );
+  })
+  .keyup();
+</script> 
+</body>
+</html>
