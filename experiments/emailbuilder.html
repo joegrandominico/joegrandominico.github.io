@@ -20,10 +20,12 @@
 		<hr>
 		<p class="textdisplay"></p>
 		<script>
-			$("#Email").keyup(function() {
-				var value = $( this ).val();
-				$("#textdisplay").text( value );
-			}).keyup();
+			$( document ).ready(function() {
+				$("#Email").keyup(function() {
+					var value = $( this ).val();
+					$("#textdisplay").text( value );
+				}).keyup();
+			});
 		</script>
 	</body>
 </html>
