@@ -1,0 +1,182 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Survey</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+$(function() {
+   $("a").attr('href', function(i, h) {
+     return h + (h.indexOf('?') != -1 ? "&case=" + getQueryVariable("case") : "?case=" + getQueryVariable("case"));
+   });
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-72169886-1']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_setCustomVar',
+      1,                   // This custom var is set to slot #1.  Required parameter.
+      'case',           // The top-level name for your online content categories.  Required parameter.
+      getQueryVariable("case"),  // Gets & Sets the value of "case" to url variable for this page.  Required parameter.
+      3                    // Sets the scope to page-level.  Optional parameter.
+   ]);
+ _gaq.push(['_trackEvent',
+      'CaseNumber', // category of activity
+      getQueryVariable("case"), // Action
+   ]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  function getQueryVariable(variable) {
+  	var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+      return(false);}
+
+</script>
+<style>
+/*
+| The mu framework v0.2.0
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 40px auto;
+  max-width: 760px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #444;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+a {
+  color: #06c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #049;
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  margin: 25px 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+td, th, hr {
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  background: #ddd;
+  border: 0;
+  padding: 9px 20px;
+  font-size: 14px;
+}
+
+input, table {
+  font-size: 16px;
+}
+
+input, td, th {
+  padding: 5px;
+  vertical-align: bottom;
+}
+
+code, pre, button:hover {
+  background: #eee;
+}
+
+pre {
+  padding: 8px;
+  white-space: pre-wrap;
+}
+
+/*
+| GRID
+*/
+.row {
+  display: block;
+  width: auto;
+  min-height: 1px;
+}
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row .c {
+  float: left;
+}
+
+table, .g2, .g3, .g3-2, .m2, .m3, .m3-2 {
+  width: 100%;
+}
+
+/*
+| Media queries
+*/
+@media (min-width: 768px) {
+  .g2 {
+    width: 50%;
+  }
+
+  .m2 {
+    margin-left: 50%;
+  }
+
+  .g3 {
+    width: 33.33%;
+  }
+
+  .g3-2 {
+    width: 66.66%;
+  }
+
+  .m3 {
+    margin-left: 33.33%;
+  }
+
+  .m3-2 {
+    margin-left: 66.66%;
+  }
+}
+</style>
+</head>
+<body>
+<h1>Thank you for the feedback!</h1>
+<h3>What made this a good experience?</h3>
+<textarea>Feedback please :) </textarea>
+<br>
+<a href="/thanks.html"><button>Submit</button></a>
+</body>
+</html>
